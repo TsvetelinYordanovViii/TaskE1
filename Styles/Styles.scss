@@ -76,4 +76,21 @@ nav {
         background-color: #202D39;
         border-color: #DC5426;
     }
+
+    .end-overlay {
+        position: absolute;
+        height: 3.15rem;
+        left: 80%;
+        background-image: linear-gradient(to right, transparent, #202D39);
+
+        .btn {
+            background-color: transparent;
+
+            img {
+                width: 25px;
+                height: 14px;
+                margin-top: 2px;
+            }
+        }
+    }
 }
