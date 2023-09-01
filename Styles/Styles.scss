@@ -173,3 +173,47 @@ nav {
         border-color: #E59D48;
     }
 }
+
+.content {
+    margin-top: 350px;
+
+    .highlight-row {
+        font-size: 14px;
+
+        .highlight {
+            width: auto;
+        }
+
+        p {
+            margin-bottom: .4rem;
+        }
+
+        .highlight-title {
+            font-size: 14px;
+        }
+
+        .highlight-text {
+            color: #777777;
+        }
+    }
+}
+
+.offer-card {
+    width: 271px;
+    height: 271px;
+    background-color: #008AEE;
+    color: white;
+    text-align: center;
+
+
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        background-color: white;
+        color: #008AEE;
+        width: auto;
+    }
+}
