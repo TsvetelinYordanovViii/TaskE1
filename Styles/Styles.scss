@@ -96,3 +96,48 @@ nav {
         }
     }
 }
+
+.search-form {
+    input:nth-child(1) {
+        width: 85%;
+        border-color: #008AEE;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    input:nth-child(2) {
+        width: 12.5%;
+        background-color: #008AEE;
+    }
+}
+
+.filters {
+
+    .btn {
+        border-width: 2px;
+    }
+
+    .btn:nth-child(1) {
+        background-color: #008AEE;
+    }
+
+    .btn:nth-child(2) {
+        border-color: #008AEE;
+    }
+
+    .btn:nth-child(3) {
+        border-color: #5FB865;
+    }
+
+    .btn:nth-child(4) {
+        border-color: #63C7C9;
+    }
+
+    .btn:nth-child(5) {
+        border-color: #DC5426;
+    }
+
+    .btn:nth-child(6) {
+        border-color: #E59D48;
+    }
+}
