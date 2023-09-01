@@ -42,10 +42,11 @@ header {
 }
 
 .vr {
-    border-color: #394957;
+    background-color: #394957;
 }
 
 nav {
+    position: relative;
     height: 32px;
 
     .btn {
@@ -80,8 +81,9 @@ nav {
     .end-overlay {
         position: absolute;
         height: 3.15rem;
-        left: 80%;
+
         background-image: linear-gradient(to right, transparent, #202D39);
+        right: 0%;
 
         .btn {
             background-color: transparent;
