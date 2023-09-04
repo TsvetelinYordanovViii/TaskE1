@@ -459,3 +459,29 @@ nav {
         }
     }
 }
+
+.map {
+    margin-top: 100.15px;
+
+    .location.sofia {
+        top: 270.85px;
+        left: 190px;
+    }
+
+    .location.varna {
+        top: 170.85px;
+        right: 245px;
+    }
+
+    .location-relative {
+        .gear {
+            bottom: -14px;
+            left: -16.5px;
+        }
+
+        .wrench {
+            bottom: -13px;
+            left: -15.5px;
+        }
+    }
+}
