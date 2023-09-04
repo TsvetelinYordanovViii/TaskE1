@@ -191,6 +191,49 @@ nav {
 .content {
     margin-top: 350px;
 
+    .other-row,
+    .miscelaneous-row {
+        justify-content: space-between;
+    }
+
+    .offers-row {
+        margin-top: 42px;
+    }
+
+    .latest-row,
+    .other-row {
+        margin-top: 80.13px;
+    }
+
+    .offer-card,
+    .auction-card,
+    .car-auction-card,
+    .car-card,
+    .parts-card,
+    .games-card {
+        width: 271px;
+        height: 271px;
+        background-color: #008AEE;
+        color: white;
+        text-align: center;
+        box-shadow: 0px 0px 20px 0px #00000026;
+
+
+
+        p {
+            font-size: 16px;
+        }
+
+        button {
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+            background-color: white;
+            color: #008AEE;
+            width: auto;
+            font-size: 18px;
+        }
+    }
+
     .highlight-row {
         font-size: 14px;
 
@@ -210,83 +253,104 @@ nav {
             color: #777777;
         }
     }
-}
-
-.offers-row {
-    margin-top: 42px;
-}
-
-.latest-row,
-.other-row {
-    margin-top: 80.13px;
-}
-
-.offer-card,
-.auction-card,
-.car-auction-card,
-.car-card,
-.parts-card,
-.games-card {
-    width: 271px;
-    height: 271px;
-    background-color: #008AEE;
-    color: white;
-    text-align: center;
-    box-shadow: 0px 0px 20px 0px #00000026;
 
 
 
-    p {
-        font-size: 16px;
+    .auction-card {
+        background-color: #5FB865;
+
+        button {
+            color: #5FB865;
+        }
     }
 
-    button {
-        padding-top: 0.2rem;
-        padding-bottom: 0.2rem;
-        background-color: white;
-        color: #008AEE;
-        width: auto;
-        font-size: 18px;
+    .car-auction-card {
+        background-color: #63C7C9;
+
+        button {
+            color: #63C7C9;
+        }
     }
-}
 
-.auction-card {
-    background-color: #5FB865;
+    .car-card {
+        background-color: #DC5426;
 
-    button {
-        color: #5FB865;
+        button {
+            color: #DC5426;
+        }
     }
-}
 
-.car-auction-card {
-    background-color: #63C7C9;
+    .parts-card {
+        background-color: #E59D48;
 
-    button {
-        color: #63C7C9;
+        button {
+            color: #E59D48;
+        }
     }
-}
 
-.car-card {
-    background-color: #DC5426;
+    .games-card {
+        background-color: #BD5FE9;
 
-    button {
-        color: #DC5426;
+        button {
+            color: #BD5FE9;
+        }
     }
-}
 
-.parts-card {
-    background-color: #E59D48;
+    .insurance-card,
+    .credit-card,
+    .diary-card,
+    .news-card {
+        box-shadow: 0px 0px 20px 0px #00000026;
 
-    button {
-        color: #E59D48;
+        width: 271px;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 1.65rem;
+
+        p {
+            font-size: 16px;
+            color: #999999;
+        }
     }
-}
 
-.games-card {
-    background-color: #BD5FE9;
+    .insurance-card {
+        border-style: solid;
+        border-width: 2px;
+        border-color: #DC5426;
 
-    button {
-        color: #BD5FE9;
+        h5 {
+            color: #DC5426;
+        }
+    }
+
+    .credit-card {
+        border-style: solid;
+        border-width: 2px;
+        border-color: #5FB865;
+
+        h5 {
+            color: #5FB865;
+        }
+    }
+
+    .diary-card {
+        border-style: solid;
+        border-width: 2px;
+        border-color: #008AEE;
+
+        h5 {
+            color: #008AEE;
+        }
+    }
+
+    .news-card {
+        border-style: solid;
+        border-width: 2px;
+        border-color: #0043EE;
+
+        h5 {
+            color: #0043EE;
+        }
     }
 }
 
@@ -361,64 +425,6 @@ nav {
 
 .latest {
     margin-top: 2rem;
-}
-
-
-.insurance-card,
-.credit-card,
-.diary-card,
-.news-card {
-    box-shadow: 0px 0px 20px 0px #00000026;
-
-    width: 271px;
-    text-align: center;
-    font-size: 20px;
-    border-radius: 1.65rem;
-
-    p {
-        font-size: 16px;
-        color: #999999;
-    }
-}
-
-.insurance-card {
-    border-style: solid;
-    border-width: 2px;
-    border-color: #DC5426;
-
-    h5 {
-        color: #DC5426;
-    }
-}
-
-.credit-card {
-    border-style: solid;
-    border-width: 2px;
-    border-color: #5FB865;
-
-    h5 {
-        color: #5FB865;
-    }
-}
-
-.diary-card {
-    border-style: solid;
-    border-width: 2px;
-    border-color: #008AEE;
-
-    h5 {
-        color: #008AEE;
-    }
-}
-
-.news-card {
-    border-style: solid;
-    border-width: 2px;
-    border-color: #0043EE;
-
-    h5 {
-        color: #0043EE;
-    }
 }
 
 .comments {
@@ -665,89 +671,111 @@ footer {
 
 @media (max-width: 767.98px) {
 
-    .comments {
-        .previous-comment {
-            top: 45%;
-            left: 3%;
 
-            img {
-                width: 40px;
-                height: 20px;
-            }
+    .content {
+
+        .other-row,
+        .miscelaneous-row {
+            justify-content: center;
         }
 
-        .next-comment {
-            top: 45%;
-            right: 3%;
-
-            img {
-                width: 40px;
-                height: 20px;
-            }
-        }
-
-        .comment-box {
+        .offer-card,
+        .auction-card,
+        .car-auction-card,
+        .car-card,
+        .parts-card,
+        .games-card,
+        .insurance-card,
+        .credit-card,
+        .diary-card,
+        .news-card {
             width: 358px;
-            height: 300px;
-            justify-content: space-between !important;
-
-            .comment {
-                margin-top: 11px;
-                padding-left: 30px;
-                padding-right: 30px;
-            }
-
-            .commenter {
-                margin-bottom: 11px;
-            }
-        }
-    }
-
-    .map {
-        .location.sofia {
-            top: 26%;
-            left: 12%;
         }
 
-        .location.varna {
-            top: 12%;
-            right: 7%;
+        .comments {
+            .previous-comment {
+                top: 45%;
+                left: 3%;
+
+                img {
+                    width: 40px;
+                    height: 20px;
+                }
+            }
+
+            .next-comment {
+                top: 45%;
+                right: 3%;
+
+                img {
+                    width: 40px;
+                    height: 20px;
+                }
+            }
+
+            .comment-box {
+                width: 358px;
+                height: 300px;
+                justify-content: space-between !important;
+
+                .comment {
+                    margin-top: 11px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+
+                .commenter {
+                    margin-bottom: 11px;
+                }
+            }
         }
 
-        .location-relative {
-            width: 40px;
-            height: 55px;
-
-            .pin {
-                width: 75px;
-                height: 85px;
+        .map {
+            .location.sofia {
+                top: 26%;
+                left: 12%;
             }
 
-            .gear {
-                width: 30px;
-                height: 30px;
-                bottom: 15px;
-                left: 5.5px;
+            .location.varna {
+                top: 12%;
+                right: 7%;
             }
 
-            .wrench {
-                width: 20px;
-                height: 20px;
+            .location-relative {
+                width: 40px;
+                height: 55px;
 
-                bottom: 16px;
-                left: 6.5px;
+                .pin {
+                    width: 75px;
+                    height: 85px;
+                }
+
+                .gear {
+                    width: 30px;
+                    height: 30px;
+                    bottom: 15px;
+                    left: 5.5px;
+                }
+
+                .wrench {
+                    width: 20px;
+                    height: 20px;
+
+                    bottom: 16px;
+                    left: 6.5px;
+                }
             }
         }
-    }
 
-    footer {
+        footer {
 
-        .footer-col {
-            width: 100%;
-            margin-bottom: 36px;
-
-            .footer-links {
+            .footer-col {
                 width: 100%;
+                margin-bottom: 36px;
+
+                .footer-links {
+                    width: 100%;
+                }
             }
         }
     }
