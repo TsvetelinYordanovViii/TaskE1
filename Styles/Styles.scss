@@ -441,36 +441,41 @@ nav {
         border: none;
     }
 
-}
-
-.comment-box {
-    width: 594px;
-    height: 261;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: 0px 0px 20px 0px #00000014;
-    box-sizing: border-box;
-
-    .comment {
-        text-align: center;
-        height: 123px;
-    }
-
-    .user-pic {
-        border-radius: 100%;
-        background-color: #008AEE;
-        padding: 1.5rem;
-    }
-
-    .commenter {
-        margin-top: 50px;
 
 
-        .username {
-            color: #008AEE !important;
+    .comment-box {
+        width: 594px;
+        height: 261px;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 0px 0px 20px 0px #00000014;
+        box-sizing: border-box;
+
+        .comment {
+            margin-top: 25px;
+            padding-left: 25px;
+            padding-right: 25px;
+            text-align: center;
+            height: 123px;
+            width: 100%;
+        }
+
+        .commenter {
+            margin-bottom: 25px;
+
+            .user-pic {
+                border-radius: 100%;
+                background-color: #008AEE;
+                padding: 1.5rem;
+            }
+
+            .username {
+                color: #008AEE;
+            }
         }
     }
+
 }
 
 .map {
@@ -580,10 +585,160 @@ footer {
 }
 
 
-@media (max-width: 767.98px) {}
+@media (max-width: 1399.98px) {
+    .comments {
+        .previous-comment {
+            top: 50%;
+            left: 22%;
+        }
+
+        .next-comment {
+            top: 50%;
+            right: 22%;
+        }
+    }
+
+    .map {
+        .location.sofia {
+            top: 34.5%;
+            left: 13.375%;
+        }
+
+        .location.varna {
+            top: 19.75%;
+            right: 9.9%;
+        }
+    }
+
+}
+
+@media (max-width: 1199.98px) {
+    .comments {
+        .previous-comment {
+            left: 16%;
+        }
+
+        .next-comment {
+            right: 16%;
+        }
+    }
+
+    .map {
+        .location.sofia {
+            top: 32.5%;
+            left: 12.75%;
+        }
+
+        .location.varna {
+            top: 17.75%;
+            right: 9.5%;
+        }
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    .comments {
+        .previous-comment {
+            left: 5%;
+        }
+
+        .next-comment {
+            right: 5%;
+        }
+    }
+
+    .map {
+        .location.sofia {
+            top: 28%;
+            left: 12.75%;
+        }
+
+        .location.varna {
+            top: 13%;
+            right: 7%;
+        }
+    }
+
+}
 
 
 @media (max-width: 767.98px) {
+
+    .comments {
+        .previous-comment {
+            top: 45%;
+            left: 3%;
+
+            img {
+                width: 40px;
+                height: 20px;
+            }
+        }
+
+        .next-comment {
+            top: 45%;
+            right: 3%;
+
+            img {
+                width: 40px;
+                height: 20px;
+            }
+        }
+
+        .comment-box {
+            width: 358px;
+            height: 300px;
+            justify-content: space-between !important;
+
+            .comment {
+                margin-top: 11px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .commenter {
+                margin-bottom: 11px;
+            }
+        }
+    }
+
+    .map {
+        .location.sofia {
+            top: 26%;
+            left: 12%;
+        }
+
+        .location.varna {
+            top: 12%;
+            right: 7%;
+        }
+
+        .location-relative {
+            width: 40px;
+            height: 55px;
+
+            .pin {
+                width: 75px;
+                height: 85px;
+            }
+
+            .gear {
+                width: 30px;
+                height: 30px;
+                bottom: 15px;
+                left: 5.5px;
+            }
+
+            .wrench {
+                width: 20px;
+                height: 20px;
+
+                bottom: 16px;
+                left: 6.5px;
+            }
+        }
+    }
 
     footer {
 
