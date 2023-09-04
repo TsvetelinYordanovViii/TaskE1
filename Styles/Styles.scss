@@ -410,15 +410,34 @@ nav {
 
 .comments {
     width: 100%;
-    height: 261;
+    height: 261px;
     margin-top: 87px;
+
+    .previous-comment {
+        top: 50%;
+        left: 22%;
+        rotate: 180deg;
+        background-color: transparent;
+        border: none;
+    }
+
+    .next-comment {
+        top: 50%;
+        right: 22%;
+        background-color: transparent;
+        border: none;
+    }
+
 }
 
 .comment-box {
     width: 594px;
     height: 261;
     font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
     box-shadow: 0px 0px 20px 0px #00000014;
+    box-sizing: border-box;
 
     .comment {
         text-align: center;
@@ -433,5 +452,10 @@ nav {
 
     .commenter {
         margin-top: 50px;
+
+
+        .username {
+            color: #008AEE !important;
+        }
     }
 }
