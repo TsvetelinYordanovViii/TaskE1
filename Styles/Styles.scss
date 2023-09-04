@@ -238,7 +238,12 @@ nav {
         font-size: 14px;
 
         .highlight {
+            justify-content: center;
             width: auto;
+
+            img {
+                margin-right: 15px;
+            }
         }
 
         p {
@@ -425,12 +430,8 @@ nav {
         width: 271px;
     }
 
-    .latest-end-cutoff {
-        position: absolute;
-        width: 100px;
-        height: 100%;
-        background-color: white;
-        right: 0%;
+    .latest-item:nth-child(4n) {
+        visibility: hidden;
     }
 }
 
@@ -603,30 +604,46 @@ footer {
 
 
 @media (max-width: 1399.98px) {
-    .comments {
-        .previous-comment {
-            top: 50%;
-            left: 22%;
+
+    .content {
+
+        .offer-slider {
+            margin-left: 8px;
         }
 
-        .next-comment {
-            top: 50%;
-            right: 22%;
+        .latest-slider {
+            margin-right: 8px;
+        }
+
+        .offer-item,
+        .latest-item {
+            margin-right: 8px;
+        }
+
+        .comments {
+            .previous-comment {
+                top: 50%;
+                left: 22%;
+            }
+
+            .next-comment {
+                top: 50%;
+                right: 22%;
+            }
+        }
+
+        .map {
+            .location.sofia {
+                top: 34.5%;
+                left: 13.375%;
+            }
+
+            .location.varna {
+                top: 19.75%;
+                right: 9.9%;
+            }
         }
     }
-
-    .map {
-        .location.sofia {
-            top: 34.5%;
-            left: 13.375%;
-        }
-
-        .location.varna {
-            top: 19.75%;
-            right: 9.9%;
-        }
-    }
-
 }
 
 @media (max-width: 1199.98px) {
@@ -684,6 +701,20 @@ footer {
 
 
     .content {
+        .highlight-row {
+            width: 100%;
+
+            .highlight:nth-child(2n) {
+                flex-direction: row-reverse;
+                text-align: end;
+                margin-left: auto;
+
+                img {
+                    margin-left: 15px;
+                    margin-right: 0px;
+                }
+            }
+        }
 
         .latest-slider,
         .offer-slider {
@@ -707,8 +738,7 @@ footer {
             }
 
 
-            .offer-end-overlay,
-            .latest-end-cutoff {
+            .offer-end-overlay {
                 visibility: collapse;
             }
 
