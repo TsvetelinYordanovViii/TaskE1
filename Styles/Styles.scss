@@ -29,6 +29,14 @@ a {
     top: 144px
 }
 
+.footer-bg {
+    height: 300px;
+    width: 100%;
+    background-color: #202D39;
+    z-index: -1;
+    top: 200rem;
+}
+
 .slider {
     height: 299px;
     width: 100%;
@@ -483,5 +491,66 @@ nav {
             bottom: -13px;
             left: -15.5px;
         }
+    }
+}
+
+footer {
+    margin-top: 180px;
+
+    .footer-header {
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+
+    .footer-header,
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    .car-rating {
+        color: #5FB865;
+        font-size: 16px;
+    }
+
+    .copyright {
+        font-family: 'Roboto', sans-serif;
+        color: #999999;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .footer-links {
+        background-color: #19242D;
+        width: 271px;
+        height: 230px;
+        padding: 15px;
+    }
+
+    .footer-col {
+        height: 230px;
+        box-sizing: border-box;
+    }
+
+    .footer-col:first-child {
+        .footer-links:nth-child(1) {
+            height: 165px;
+        }
+
+        .footer-links:nth-child(2) {
+            height: auto;
+        }
+    }
+
+    .footer-col:nth-child(2) p {
+        margin-bottom: 5px;
     }
 }
