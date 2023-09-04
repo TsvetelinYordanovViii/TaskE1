@@ -198,10 +198,12 @@ nav {
 
     .offers-row {
         margin-top: 42px;
+        flex-direction: row;
     }
 
     .latest-row,
     .other-row {
+        flex-direction: row;
         margin-top: 80.13px;
     }
 
@@ -217,8 +219,6 @@ nav {
         color: white;
         text-align: center;
         box-shadow: 0px 0px 20px 0px #00000026;
-
-
 
         p {
             font-size: 16px;
@@ -355,9 +355,10 @@ nav {
 }
 
 .offer-slider {
+    margin-left: 32px;
+
     h5 {
         top: -0.5rem;
-        left: 2rem
     }
 
     .offer-item {
@@ -381,6 +382,7 @@ nav {
             color: #5FB865;
         }
 
+        margin-right: 32px;
         width: 271px;
     }
 
@@ -403,10 +405,10 @@ nav {
 }
 
 .latest-slider {
+    margin-right: 32px;
 
     h5 {
         top: -0.5rem;
-        left: 2rem
     }
 
     .latest-item {
@@ -419,7 +421,16 @@ nav {
             color: #008AEE;
         }
 
+        margin-right: 32px;
         width: 271px;
+    }
+
+    .latest-end-cutoff {
+        position: absolute;
+        width: 100px;
+        height: 100%;
+        background-color: white;
+        right: 0%;
     }
 }
 
@@ -674,9 +685,52 @@ footer {
 
     .content {
 
+        .latest-slider,
+        .offer-slider {
+            h5 {
+                left: 2.25rem;
+            }
+
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 25px;
+            width: 100%;
+
+            .offer-item,
+            .latest-item {
+                opacity: 50%;
+            }
+
+            .offer-item:first-child,
+            .latest-item:first-child {
+                opacity: 100%;
+            }
+
+
+            .offer-end-overlay,
+            .latest-end-cutoff {
+                visibility: collapse;
+            }
+
+            .latest {
+                padding-left: 2.25rem;
+            }
+
+            .offers {
+                margin-left: 2.25rem;
+            }
+        }
+
+        .offers-row,
+        .latest-row,
         .other-row,
         .miscelaneous-row {
             justify-content: center;
+        }
+
+        .latest-row {
+            flex-direction: column-reverse;
+            align-items: center;
         }
 
         .offer-card,
