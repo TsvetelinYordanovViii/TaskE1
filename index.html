@@ -421,14 +421,14 @@
 
             <div class="comments d-flex justify-content-center position-relative">
 
-                <button class="previous-comment position-absolute d-flex align-items-center">
+                <button class="previous-comment position-absolute d-flex align-items-center justify-content-center">
                     <img src="Styles/Images/SVG/ArrowBlueShadowed.svg" alt="" width="55.05" height="36">
                 </button>
-                <button class="next-comment position-absolute d-flex align-items-center">
+                <button class="next-comment position-absolute d-flex align-items-center justify-content-center">
                     <img src="Styles/Images/SVG/ArrowBlueShadowed.svg" alt="" width="55.05" height="36">
                 </button>
                 <div
-                    class="comment-box d-flex justify-content-between flex-column align-items-center rounded-4 position-absolute">
+                    class="comment-box bg-white d-flex justify-content-between flex-column align-items-center rounded-4 position-absolute current">
                     <div class="comment d-flex justify-content-start flex-column align-items-center">
                         <img class="mb-3" src="Styles/Images/SVG/“.svg" alt="" width="28.66" height="26">
                         Единственото място в Интернет (българско) , където намирам части за коли 25+ години. Имат
@@ -449,7 +449,7 @@
                     </div>
                 </div>
                 <div
-                    class="comment-box d-flex justify-content-between flex-column align-items-center rounded-4 position-absolute">
+                    class="comment-box bg-white d-flex justify-content-between flex-column align-items-center rounded-4 position-absolute previous-1">
                     <div class="comment d-flex justify-content-start flex-column align-items-center">
                         <img class="mb-3" src="Styles/Images/SVG/“.svg" alt="" width="28.66" height="26">
                         Много бързо и изключително коректно и професионално отношение!
@@ -469,7 +469,7 @@
                     </div>
                 </div>
                 <div
-                    class="comment-box d-flex justify-content-between flex-column align-items-center rounded-4 position-absolute">
+                    class="comment-box bg-white d-flex justify-content-between flex-column align-items-center rounded-4 position-absolute previous-2">
                     <div class="comment d-flex justify-content-start flex-column align-items-center">
                         <img class="mb-3" src="Styles/Images/SVG/“.svg" alt="" width="28.66" height="26">
                         Реагират своевременно, СУК работи и повишава качеството на услугите.
@@ -489,7 +489,7 @@
                     </div>
                 </div>
                 <div
-                    class="comment-box d-flex justify-content-between flex-column align-items-center rounded-4 position-absolute">
+                    class="comment-box bg-white d-flex justify-content-between flex-column align-items-center rounded-4 position-absolute next-1">
                     <div class="comment d-flex justify-content-start flex-column align-items-center">
                         <img class="mb-3" src="Styles/Images/SVG/“.svg" alt="" width="28.66" height="26">
                         Доволен съм от поръчаните до момента авточасти. Хубаво е да Ви има на пазара с авточасти, защото
@@ -511,7 +511,7 @@
                     </div>
                 </div>
                 <div
-                    class="comment-box d-flex justify-content-between flex-column align-items-center rounded-4 position-absolute">
+                    class="comment-box bg-white d-flex justify-content-between flex-column align-items-center rounded-4 position-absolute next-2">
                     <div class="comment d-flex justify-content-start flex-column align-items-center">
                         <img class="mb-3" src="Styles/Images/SVG/“.svg" alt="" width="28.66" height="26">
                         СУПЕР
@@ -602,6 +602,7 @@
     <script src="Scripts/Libraries/ScrollMagicPlugins/animation.gsap.js"></script>
     <script src="Scripts/Libraries/ScrollMagicPlugins/debug.addIndicators.js"></script>
     <script src="Scripts/ScrollAnimations.js"></script>
+    <script src="Scripts/CommentCarousel.js"></script>
     <script src="Scripts/SlideItem.js"></script>
     <script src="Scripts/SwapCommentArrows.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

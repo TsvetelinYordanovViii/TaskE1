@@ -494,18 +494,22 @@ nav {
     margin-top: 87px;
 
     .previous-comment {
-        top: 50%;
-        left: 22%;
+        width: 50%;
+        height: 100%;
+        left: 0px;
         rotate: 180deg;
         background-color: transparent;
         border: none;
+        z-index: 5;
     }
 
     .next-comment {
-        top: 50%;
-        right: 22%;
+        width: 50%;
+        height: 100%;
+        right: 0px;
         background-color: transparent;
         border: none;
+        z-index: 5;
     }
 
 
@@ -517,7 +521,7 @@ nav {
         font-weight: 500;
         font-family: 'Roboto', sans-serif;
         box-shadow: 0px 0px 20px 0px #00000014;
-        box-sizing: border-box;
+        transition: transform .25s linear;
 
         .comment {
             margin-top: 25px;
@@ -675,18 +679,6 @@ footer {
             margin-right: 8px;
         }
 
-        .comments {
-            .previous-comment {
-                top: 50%;
-                left: 22%;
-            }
-
-            .next-comment {
-                top: 50%;
-                right: 22%;
-            }
-        }
-
         .map {
             .location.sofia {
                 top: 34.5%;
@@ -702,13 +694,13 @@ footer {
 }
 
 @media (max-width: 1199.98px) {
-    .comments {
-        .previous-comment {
-            left: 16%;
-        }
 
+    .comments {
+
+        .previous-comment,
         .next-comment {
-            right: 16%;
+            width: 40%;
+            padding-left: 25%;
         }
     }
 
@@ -845,16 +837,6 @@ footer {
         height: 1067.44px;
     }
 
-    .comments {
-        .previous-comment {
-            left: 5%;
-        }
-
-        .next-comment {
-            right: 5%;
-        }
-    }
-
     .map {
         .location.sofia {
             top: 28%;
@@ -951,9 +933,6 @@ footer {
 
         .comments {
             .previous-comment {
-                top: 45%;
-                left: 3%;
-
                 img {
                     width: 40px;
                     height: 20px;
@@ -961,9 +940,6 @@ footer {
             }
 
             .next-comment {
-                top: 45%;
-                right: 3%;
-
                 img {
                     width: 40px;
                     height: 20px;
@@ -1103,4 +1079,24 @@ nav {
     100% {
         transform: translate(0%, 0%);
     }
+}
+
+.comment-box.previous-1 {
+    z-index: -1;
+    transform: translateX(-50%) scale(80%);
+}
+
+.comment-box.previous-2 {
+    z-index: -2;
+    transform: translateX(-70%) scale(60%);
+}
+
+.comment-box.next-1 {
+    z-index: -1;
+    transform: translateX(50%) scale(80%);
+}
+
+.comment-box.next-2 {
+    z-index: -2;
+    transform: translateX(70%) scale(60%);
 }
