@@ -82,6 +82,10 @@ header {
     width: 63.57px;
 }
 
+.options-mobile {
+    visibility: collapse;
+}
+
 .vr {
     background-color: #394957;
 }
@@ -140,7 +144,7 @@ nav {
 
 .search {
     padding: 20px 25px;
-    margin-top: 35px;
+    margin-top: 15px;
 }
 
 .search-header {
@@ -159,9 +163,18 @@ nav {
         border-width: 1px;
     }
 
+
+    .submit-div {
+        width: 25%;
+    }
+
+    .filters-mobile {
+        visibility: collapse;
+    }
+
     input:nth-child(2) {
         font-family: 'Roboto', sans-serif;
-        width: 12.5%;
+        width: 80%;
         padding: 13px 30px;
         font-size: 26px;
         background-color: #008AEE;
@@ -169,19 +182,18 @@ nav {
 }
 
 .blue-pointer {
-    top: -33px;
+    top: -25px;
     left: 12px;
 }
 
 .filters {
-    margin-bottom: 20px;
-
     .btn {
         border-width: 2px;
     }
 
     .btn:nth-child(1) {
         background-color: #008AEE;
+        font-weight: 700;
     }
 
     .btn:nth-child(2) {
@@ -699,6 +711,10 @@ footer {
         height: 26.15px;
     }
 
+    .options-mobile {
+        visibility: visible;
+    }
+
     .other-sites,
     .phone-number,
     .login,
@@ -723,6 +739,10 @@ footer {
         }
     }
 
+    .nav-links {
+        padding: 0px;
+    }
+
     .search {
         margin-top: 5px;
         padding: 12px 15px;
@@ -734,7 +754,7 @@ footer {
     }
 
     .search-form {
-        margin-bottom: 12px;
+        margin-bottom: 0px;
 
         input:nth-child(1) {
             padding: 9px 15px;
@@ -742,10 +762,19 @@ footer {
             width: 60%;
         }
 
+        .submit-div {
+            width: 40%;
+        }
+
+        .filters-mobile {
+            visibility: visible;
+            padding: 5%;
+        }
+
         input:nth-child(2) {
             padding: 5px 15px;
             font-size: 16px;
-            width: 30%;
+            width: 80%;
         }
     }
 
@@ -755,8 +784,6 @@ footer {
     }
 
     .filters {
-        margin-bottom: 0px;
-
         .btn {
             position: absolute;
             visibility: collapse;
