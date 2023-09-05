@@ -204,7 +204,12 @@
                 <div class="offer-slider col-9 pe-0 ps-0 position-relative">
                     <h5 class="fw-bold position-absolute">Специални предложения:</h5>
                     <div class="offers d-flex flex-row position-relative overflow-hidden mt-4">
-                        <div class="offer-item">
+                        <div class="offer-start-overlay d-flex align-items-center">
+                            <button class="previous-offer btn d-flex align-items-center">
+                                <img src="Styles/Images/SVG/ArrowBlue.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="offer-item current">
                             <img src="Styles/Images/PNG/image 1.png" alt="">
                             <p class="name fw-bold">Фар за Audi A5 Coupe I (06.2007 - 01.2017), купе, позиция: дясна</p>
                             <div class="d-flex flex-row justify-content-between align-items-center">
@@ -253,7 +258,7 @@
                             </div>
                         </div>
                         <div class="offer-end-overlay d-flex align-items-center justify-content-end">
-                            <button class="btn d-flex align-items-center">
+                            <button class="next-offer btn d-flex align-items-center">
                                 <img src="Styles/Images/SVG/ArrowBlue.svg" alt="">
                             </button>
                         </div>
@@ -597,6 +602,7 @@
     <script src="Scripts/Libraries/ScrollMagicPlugins/animation.gsap.js"></script>
     <script src="Scripts/Libraries/ScrollMagicPlugins/debug.addIndicators.js"></script>
     <script src="Scripts/ScrollAnimations.js"></script>
+    <script src="Scripts/SlideItem.js"></script>
     <script src="Scripts/SwapCommentArrows.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
