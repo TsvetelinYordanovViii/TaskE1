@@ -424,6 +424,9 @@ nav {
 
         margin-right: 32px;
         width: 271px;
+
+        //I am a smart cookie.
+        transition: transform 0.5s;
     }
 
     .offer-start-overlay,
@@ -476,10 +479,8 @@ nav {
 
         margin-right: 32px;
         width: 271px;
-    }
 
-    .latest-item:nth-child(4n) {
-        visibility: hidden;
+        transition: transform 0.5s;
     }
 }
 
@@ -1101,25 +1102,5 @@ nav {
 
     100% {
         transform: translate(0%, 0%);
-    }
-}
-
-.moving-item-left {
-    animation: move-item-left .5s forwards;
-}
-
-.moving-item-right {
-    animation: move-item-right .5s forwards;
-}
-
-@keyframes move-item-left {
-    100% {
-        transform: translateX(100%);
-    }
-}
-
-@keyframes move-item-right {
-    100% {
-        transform: translateX(-100%);
     }
 }
