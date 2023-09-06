@@ -91,6 +91,7 @@ header {
 }
 
 nav {
+    z-index: 10;
     position: relative;
     height: 32px;
 
@@ -346,6 +347,7 @@ nav {
         text-align: center;
         font-size: 20px;
         border-radius: 1.65rem;
+        background-color: white;
 
         p {
             font-size: 16px;
