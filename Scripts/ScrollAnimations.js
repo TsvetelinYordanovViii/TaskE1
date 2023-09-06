@@ -161,3 +161,35 @@ for (let i = 0; i < cards.length; i++) {
             .addTo(controller);
     }
 }
+
+//---------------------------------------------------------------------------------------
+// Comment Carousel and Map
+//---------------------------------------------------------------------------------------
+
+
+const fadeInComments = new ScrollMagic.Scene(
+    {
+        triggerElement: '.comments',
+        triggerHook: .25,
+        offset: -150,
+        reverse: false
+    })
+    .setTween(TweenMax.from('.comments', 0.4, {
+        opacity: '0',
+        ease: Power0.ease
+    }))
+    .addTo(controller);
+
+
+const fadeInMap = new ScrollMagic.Scene(
+    {
+        triggerElement: '.map',
+        triggerHook: .25,
+        offset: -150,
+        reverse: false
+    })
+    .setTween(TweenMax.from('.map', 0.4, {
+        opacity: '0',
+        ease: Power0.ease
+    }))
+    .addTo(controller);
