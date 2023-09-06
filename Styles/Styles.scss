@@ -33,7 +33,7 @@ a {
     height: 300px;
     width: 100%;
     background-color: #202D39;
-    z-index: -1;
+    z-index: -5;
     top: 200rem;
 }
 
@@ -275,6 +275,7 @@ nav {
         .highlight {
             justify-content: center;
             width: auto;
+            z-index: -1;
 
             img {
                 margin-right: 15px;
@@ -523,7 +524,7 @@ nav {
         font-weight: 500;
         font-family: 'Roboto', sans-serif;
         box-shadow: 0px 0px 20px 0px #00000014;
-        transition: transform .25s linear;
+        transition: transform .25s linear, opacity .25s linear;
 
         .comment {
             margin-top: 25px;
@@ -741,6 +742,7 @@ footer {
 @media (max-width: 1399.98px) {
 
     .content {
+        margin-top: 325px;
 
         .offer-slider {
             margin-left: 8px;
@@ -800,6 +802,11 @@ footer {
 }
 
 @media (max-width: 991.98px) {
+
+
+    .content {
+        margin-top: 175px;
+    }
 
     header {
         height: 105px;
@@ -1131,6 +1138,14 @@ nav {
     animation: fadeIn .75s forwards 1.5s;
 }
 
+@media (max-width: 991.98px) {
+    .search-bg {
+        transform: translate(175%, 0%);
+        opacity: 1;
+        animation: slideLeft .75s forwards 1.5s;
+    }
+}
+
 @keyframes fadeIn {
     100% {
         opacity: 1;
@@ -1138,27 +1153,41 @@ nav {
 }
 
 .highlight:nth-child(1) {
-    z-index: -1;
     transform: translate(0%, -175%);
     animation: slideDown .5s forwards 2s;
 }
 
 .highlight:nth-child(2) {
-    z-index: -1;
     transform: translate(0%, -175%);
     animation: slideDown .5s forwards 2.5s;
 }
 
 .highlight:nth-child(3) {
-    z-index: -1;
     transform: translate(0%, -175%);
     animation: slideDown .5s forwards 3s;
 }
 
 .highlight:nth-child(4) {
-    z-index: -1;
     transform: translate(0%, -175%);
     animation: slideDown .5s forwards 3.5s;
+}
+
+@media (max-width: 1399.98px) {
+    .highlight:nth-child(n) {
+        transform: translate(0%, -200%);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .highlight:nth-child(n) {
+        transform: translate(-150%, 0%);
+        animation: slideHighlightRight .5s forwards 1.5s;
+    }
+
+    .highlight:nth-child(2n) {
+        transform: translate(150%, 0%);
+        animation: slideHighlightLeft .5s forwards 1.5s;
+    }
 }
 
 @keyframes slideDown {
@@ -1171,22 +1200,64 @@ nav {
     }
 }
 
+@keyframes slideHighlightLeft {
+    60% {
+        transform: translate(-10%, 0%);
+    }
+
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes slideHighlightRight {
+    60% {
+        transform: translate(10%, 0%);
+    }
+
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
 .comment-box.previous-1 {
     z-index: -1;
-    transform: translateX(-50%) scale(80%);
+    transform: translate(-50%, 0%) scale(80%);
 }
 
 .comment-box.previous-2 {
     z-index: -2;
-    transform: translateX(-70%) scale(60%);
+    transform: translate(-70%, 0%) scale(60%);
 }
 
 .comment-box.next-1 {
     z-index: -1;
-    transform: translateX(50%) scale(80%);
+    transform: translate(50%, 0%) scale(80%);
 }
 
 .comment-box.next-2 {
     z-index: -2;
-    transform: translateX(70%) scale(60%);
+    transform: translate(70%, 0%) scale(60%);
+}
+
+@media (max-width: 991.98px) {
+    .comment-box.previous-1 {
+        opacity: 0;
+        transform: translate(-10%, -5%) scale(90%);
+    }
+
+    .comment-box.previous-2 {
+        opacity: 1;
+        transform: translate(-10%, 0%) scale(90%);
+    }
+
+    .comment-box.next-1 {
+        opacity: 0;
+        transform: translate(10%, 5%) scale(90%);
+    }
+
+    .comment-box.next-2 {
+        opacity: 1;
+        transform: translate(10%, 0%) scale(90%);
+    }
 }
