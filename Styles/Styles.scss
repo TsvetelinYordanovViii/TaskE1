@@ -9,6 +9,8 @@ a {
 .header-top-bg {
     height: 72px;
     width: 100%;
+    left: 0%;
+    top: 0%;
     background-color: #19242D;
     z-index: -1;
 }
@@ -16,9 +18,10 @@ a {
 .header-bottom-bg {
     height: 72px;
     width: 100%;
+    left: 0%;
+    top: 72px;
     background-color: #202D39;
     z-index: -1;
-    top: 72px
 }
 
 .search-bg {
@@ -30,11 +33,14 @@ a {
 }
 
 .footer-bg {
+    box-sizing: border-box;
+    padding-bottom: 100px;
     height: 300px;
     width: 100%;
+    left: 0px;
+    margin-bottom: 15px;
     background-color: #202D39;
     z-index: -5;
-    top: 200rem;
 }
 
 .banner {
@@ -691,7 +697,11 @@ nav {
 }
 
 footer {
-    margin-top: 180px;
+    margin-top: 120px;
+
+    .row {
+        padding-top: 35px;
+    }
 
     .footer-header {
         margin-bottom: 15px;
@@ -733,7 +743,6 @@ footer {
 
     .footer-col {
         height: 230px;
-        box-sizing: border-box;
     }
 
     .footer-col:first-child {
@@ -942,7 +951,21 @@ footer {
     }
 
     .footer-bg {
-        height: 1067.44px;
+        height: 1125.44px;
+    }
+
+
+    footer {
+        .row {
+            .footer-col {
+                width: 100%;
+                margin-bottom: 36px;
+
+                .footer-links {
+                    width: 358px;
+                }
+            }
+        }
     }
 
     .map {
@@ -960,8 +983,6 @@ footer {
 
 
 @media (max-width: 767.98px) {
-
-
     .content {
         .highlight-row {
             width: 100%;
@@ -1113,18 +1134,6 @@ footer {
 
                 .address-mobile {
                     visibility: visible;
-                }
-            }
-        }
-
-        footer {
-
-            .footer-col {
-                width: 100%;
-                margin-bottom: 36px;
-
-                .footer-links {
-                    width: 100%;
                 }
             }
         }
