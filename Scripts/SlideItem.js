@@ -2,17 +2,17 @@ const previousOffer = document.querySelector('.offer-start-overlay button');
 const nextOffer = document.querySelector('.offer-end-overlay button');
 
 nextOffer.addEventListener('click', () => {
-    slideItems('.offers', '.offer-item', -1);
-    setButtonVisibility('.offers', '.offer-item');
+    slideItems('.offers', '.item', -1);
+    setButtonVisibility('.offers', '.item');
 });
 
 previousOffer.addEventListener('click', () => {
-    slideItems('.offers', '.offer-item', 1);
-    setButtonVisibility('.offers', '.offer-item');
+    slideItems('.offers', '.item', 1);
+    setButtonVisibility('.offers', '.item');
 });
 
 const cycleLatest = setInterval(() => {
-    slideItemsOrReset('.latest', '.latest-item', -1);
+    slideItemsOrReset('.latest', '.item', -1);
 
 }, 2000)
 

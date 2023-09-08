@@ -6,7 +6,10 @@ a {
     font-family: 'Exo 2', sans-serif;
 }
 
-.header-top-bg {
+.header-top-bg,
+.header-bottom-bg,
+.search-bg,
+.footer-bg {
     height: 72px;
     width: 100%;
     left: 0%;
@@ -16,29 +19,21 @@ a {
 }
 
 .header-bottom-bg {
-    height: 72px;
-    width: 100%;
-    left: 0%;
     top: 72px;
     background-color: #202D39;
-    z-index: -1;
 }
 
 .search-bg {
     height: 264px;
-    width: 100%;
     background-color: #008AEE;
-    z-index: -1;
     top: 144px
 }
 
 .footer-bg {
-    box-sizing: border-box;
     padding-bottom: 100px;
     height: 300px;
-    width: 100%;
-    left: 0px;
     margin-bottom: 15px;
+    top: unset;
     background-color: #202D39;
     z-index: -5;
 }
@@ -417,14 +412,15 @@ nav {
     }
 }
 
-.offer-slider {
+.offer-slider,
+.latest-slider {
     margin-left: 32px;
 
     h5 {
         top: -0.5rem;
     }
 
-    .offer-item {
+    .item {
         position: relative;
 
         p {
@@ -443,6 +439,14 @@ nav {
         .price {
             font-size: 18.78px;
             color: #5FB865;
+        }
+
+        .buying {
+            color: #5FB865;
+        }
+
+        .offerring {
+            color: #008AEE;
         }
 
         margin-right: 32px;
@@ -483,40 +487,24 @@ nav {
     }
 }
 
-.latest-slider {
-    margin-right: 32px;
-
-    h5 {
-        top: -0.5rem;
-    }
-
-    .latest-item {
-
-        .buying {
-            color: #5FB865;
-        }
-
-        .offerring {
-            color: #008AEE;
-        }
-
-        margin-right: 32px;
-        width: 271px;
-
-        transition: transform 0.5s;
-    }
-}
-
 .latest {
     margin-top: 2rem;
+
+    .latest-slider {
+        margin-left: 0rem;
+        margin-right: 32px;
+    }
 }
+
+
 
 .comments {
     width: 100%;
     height: 261px;
     margin-top: 87px;
 
-    .previous-comment {
+    .previous-comment,
+    .next-comment {
         width: 50%;
         height: 100%;
         left: 0px;
@@ -527,15 +515,10 @@ nav {
     }
 
     .next-comment {
-        width: 50%;
-        height: 100%;
+        left: unset;
         right: 0px;
-        background-color: transparent;
-        border: none;
-        z-index: 5;
+        rotate: unset;
     }
-
-
 
     .comment-box {
         width: 594px;
