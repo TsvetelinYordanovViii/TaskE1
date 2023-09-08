@@ -77,7 +77,7 @@ const slideItems = (sliderClass, itemClass, sign) => {
 const resetItems = (sliderClass, itemClass) => {
     const items = document.querySelectorAll(sliderClass + " " + itemClass);
 
-    document.querySelector(itemClass + '.current').classList.remove('current');
+    document.querySelector(sliderClass + " " + itemClass + '.current').classList.remove('current');
     items[0].classList.add('current');
     items.forEach(element => {
         element.style.transform = `translateX(0%)`;
